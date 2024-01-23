@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid</title>
+
+    <link rel="icon" href="./imagenes/favicon.png" sizes="32x32">
+
+    <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
+
+
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@100&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+        background-image: url(./imagenes/header.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header h1,h2 {
+        color: white;
+        font-family: 'Archivo Black', sans-serif;
+    }
+
+    #logo{
+    float: left;
+    height: 75px;
+    width: 75px;
+    }
+
+    #titulo {
+        text-align: center;
+        text-shadow: 3px 3px 3px black;
+    }
+
+    nav {
+        background-color:chocolate;
+        display: flex;
+        justify-content: space-around;
+        }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        }
+
+    nav a:hover {
+        color: blue; 
+        font-weight: bold;
+    }
+
+    .titulo{
+        color: white;
+        text-align: center;
+        font-family: 'Archivo Black', sans-serif;
+        padding-top: 25px;
+    }
+
+    #contenedor-fotos{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    #fotos{
+        background-color: lightgreen;
+    }
+
+    #imagenes {
+        width: 200px;
+        height: 200px;
+    }
+
+    #contenedor-fotos img {
+        width: 80%;
+    }
+
+    #contenedor-fotos article {
+        width: 30%;
+        box-shadow: 3px 3px 3px black;
+        text-align: center;
+        background-color: white;
+        margin-top: 10px;
+        padding: 20px;
+        border-radius: 5px;
+    } 
+
+    #titulo2 {
+        text-align: center;
+        text-shadow: 3px 3px 3px black;
+        padding-top: 30px;
+    }
+
+    #mapa {
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    footer{
+        background-color: lightslategray;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #contacte{
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+
+    #enlaces{
+        width: 33%;
+    }
+
+    #mail{
+        width: 33%;
+    }
+
+    #estamos-en{
+        width: 33%;
+    }
+
+    footer h2{
+        font-size: .9em;
+    }
+
+    footer div {
+        padding: 10px;
+    }
+
+    #compras{
+        width: 10%;
+        height: 10%;
+    }
+
+    #nuestros-servicios {
+        text-align: center;
+        text-shadow: 3px 3px 3px black;
+        padding-top: 30px;  
+    }
+
+    @media (max-width: 600px){ /* moviles */
+       /*
+            nav {display: block; background-color: aqua;}
+            nav a {display: block; text-align: center;}
+        */
+        nav {flex-wrap: wrap; position: static;}
+
+        nav a {width: 100%; text-align: center;}
+
+        #contenedor-fotos {flex-wrap: wrap;}
+
+        #contenedor-fotos article {width: 100%;}
+
+        footer{display: block;}
+        footer #enlaces{width: 100%;}
+        footer #estamos-en{width: 100%;}
+        footer #email{width: 100%;} 
+    }
+
+    @media (min-width: 601px) and (max-width: 800px) {  /* tablets */
+        /*
+            nav {display: block; background-color: aqua;}
+            nav a {display: block; text-align: center;}
+        */
+            nav {flex-wrap: wrap; position: static;}
+
+            nav a {width: 100%; text-align: center;}
+
+            #contenedor-fotos {flex-wrap: wrap;}
+
+            #contenedor-fotos article {width: 50%;}
+
+            footer{display: block;}
+            footer #enlaces{width: 100%;}
+            footer #estamos-en{width: 100%;}
+            footer #email{width: 100%;}
+        }
+  
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        <div id="titulo">
+            <img id="logo" src="./imagenes/logo.png" alt="logo">
+            <h1>Página oficial del Real Madrid</h1>
+            <h2>La camiseta se puede manchar de barro, sudor y sangre, pero JAMÁS de VERGÜENZA": Don Santiago Bernabéu.</h2>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#principal">Principal</a>
+        <a href="#donde-estamos">Donde estamos</a>
+        <a href="#nuestros-servicios">Nuestros servicios</a>
+        <a href="#clientes">Nuestros clientes</a>
+        <a href="#pie">Pie de página</a>
+    </nav>
+
+    <section id="fotos">
+        <h1 class="titulo">IMÁGENES HISTÓRICAS</h1>
+        <div id="contenedor-fotos">
+        <article>
+            <img id="imagenes" src="./imagenes/14.jpg" alt="titulos">
+            <p>Copas de Europa</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/bernabeu-noche.jpg" alt="bernabeu">
+            <p>Nuevo Santiago Bernabeu</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/chilena.jpg" alt="chilena">
+            <p>Chilena de Cristiano Ronaldo</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/zidane.jpg" alt="volea">
+            <p>Volea de Zinedine Zidane</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/ramos.jpg" alt="ramos">
+            <p>Minuto noventa y Ramos</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/60.jpg" alt="alfredo">
+            <p>Los 60 en el Real Madrid</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/remontada.jpg" alt="psg">
+            <p>Remontada al PSG</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/modric.jpg" alt="luka">
+            <p>Don Luka Modric</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/zinedine.jpg" alt="zinedine">
+            <p>El mago</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/jude.jpg" alt="jude">
+            <p>Presente y futuro</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/bernabeu.jpg" alt="bernabeu">
+            <p>Santiago Bernabeu</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/florentino.jpg" alt="floren">
+            <p>El mejor presidente de la historia</p>
+        </article>
+    </div>
+
+
+
+    <div id="donde-estamos">
+        <h2 id="titulo2">¿DÓNDE ESTAMOS?</h2>
+    <p><iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0044412699003!2d-3.6909086239871822!3d40.45303867143374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sEstadio%20Santiago%20Bernab%C3%A9u!5e0!3m2!1ses!2ses!4v1702470332343!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+    
+
+    
+
+    <h2 id="nuestros-servicios">NUESTROS SERVICIOS</h2> 
+    <div  id="contenedor-fotos">
+        <article>
+            <img id="imagenes" src="./imagenes/comprar.png"  style="padding-top: 20px; " alt="comprar"> 
+            <p>Tienda Oficial. Diseñada para conquistar el campo, dominar las gradas y pasear por las calles, la nueva segunda equipación del Real Madrid te mantiene cómodo con estilo, con las clásicas rayas tricolores y un estampado gráfico infinito que simboliza el amor sin límites que los aficionados sienten por sus jugadores.</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/promociones.jpg" style="padding-top: 20px;" alt="promocion">
+            <p>¡No pierdas la oportunidad! Encuentra los mejores descuentos y añade ya a tu cesta tus hallazgos favoritos. Disfruta de nuestra selección de ropa y accesorios del Real Madrid</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/premium.jpg" style="padding-top: 20px;" alt="premium">
+            <p> -Carnet digital Madridista.</p>
+            <p> -Acceso al contenido gratuito de RM Play.</p> 
+            <p> -Suscripción a los boletines oficiales del Real Madrid.</p>
+            <p> -5% de descuento en tu primera compra en la Tienda Oficial Online.</p>
+        </article>    
+
+        <article>
+            <img id="imagenes" src="./imagenes/tour.jpg" style="padding-top: 20px;" alt="tour">
+            <p>Real Madrid C. F. Museo</p>
+            <p> Vista panorámica del interior del estadio.</p>  
+            <p>Ruta del tour acortada por obras</p> 
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/entradas.jpg" style="padding-top: 20px;" alt="entradas">
+            <p>Real Madrid-Mallorca</p>
+            <p>Real Madrid-Sevilla</p>
+            <p>Real Madrid-Valencia</p>
+            <p>Real Madrid-Barcelona</p>
+            <p>Real Madrid-Betis</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/tele.jpg" style="padding-top: 20px;" alt="television">
+            <p>Real Madrid TV es un canal de televisión en abierto español de ámbito internacional, propiedad del Real Madrid Club de Fútbol, que se emite desde 1999. Es el medio televisivo oficial del club y cuenta con dos versiones en español e inglés</p>
+             
+        </article>
+    </div>
+
+
+    <div id="clientes">
+    <h2 id="titulo2" class="clientes">NUESTROS CLIENTES</h2>
+    <div id="contenedor-fotos">
+        
+        <article>
+            <img id="imagenes" src="./imagenes/opiniones.jpg" alt="opiniones">
+            <p>Copas de Europa</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/opiniones.jpg" alt="opiniones">
+            <p>Copas de Europa</p>
+        </article>
+
+        <article>
+            <img id="imagenes" src="./imagenes/opiniones.jpg" alt="opiniones">
+            <p>Copas de Europa</p>
+        </article>
+    </div>
+    </div>
+</section>
+
+
+<footer id="pie">
+        <div id="contacte">Cualquier cosa que necesites no dudes en contactar con nosotros a traves de Gmail o redes sociales.</div>
+
+        <div id="enlaces">
+            <h2>Enlaces a RRSS</h2>
+            <a href="https://www.instagram.com/realmadrid/" id="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/realmadrid?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" id="twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/RealMadrid/?locale=es_ES" id="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://t.me/s/realmadridenvivoonlinegratis?before=103" id="telegram"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+        <div id="estamos-en">
+            <h2>Estamos en</h2>
+            <p>Av. de Concha Espina, 1, Chamartín, </p>
+            <p>28036 Madrid, España</p>
+        </div>
+
+        <div id="email">
+            <h2>Correo electronico <i class="fa-regular fa-envelope-open"></i></h2>
+            <p>realmadrid@hotmail.com</p>
+        </div>
+</footer>  
+
+</body>
+</html>
